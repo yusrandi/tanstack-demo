@@ -1,15 +1,4 @@
-# React + TypeScript + Vite
-
-Siap! 🙌
-
-Berikut **README.md final** (langsung siap copy-paste), sudah lengkap, jelas, dan clean.
-
----
-
-## 📄 README.md
-
-````markdown
-# 🚀 React Clean Architecture with TanStack Query & JSON Server
+# 🚀 React + TypeScript + Vite Clean Architecture with TanStack Query & JSON Server
 
 This project demonstrates a **Clean Architecture** setup in React (TypeScript) using **TanStack Query (React Query)** and **JSON Server** as a mock backend.
 
@@ -30,6 +19,7 @@ This project demonstrates a **Clean Architecture** setup in React (TypeScript) u
 git clone https://github.com/yusrandi/tanstack-demo.git
 cd your-repo
 ```
+
 ````
 
 ---
@@ -147,3 +137,4 @@ If you like this project, please ⭐️ the repository. Thanks!
 
 ### ✅ Done!  🚀
 ```
+````
