@@ -5,11 +5,12 @@ import { useUpdatePost } from '@/hooks/useUpdatePost';
 import { Button } from '@/components/ui/button';
 import PostForm from '@/components/pages/PostForm';
 
-export default function PostEdit() {
-  const { id } = useParams();
-  const navigate = useNavigate();
+interface props {
+  postId: string;
+}
+export default function PostEdit({ postId }: props) {
   const updatePost = useUpdatePost();
-  const { data, isLoading, isError } = usePost(id ?? '0');
+  const { data, isLoading, isError } = usePost(postId ?? '0');
 
   if (isLoading) return <p>Loading...</p>;
   if (isError) return <p>Something went wrong.</p>;
@@ -27,7 +28,7 @@ export default function PostEdit() {
   return (
     <div className='grid gap-3'>
       <Button
-        onClick={() => navigate('/')}
+        // onClick={() => navigate('/')}
         className='max-w-[200px] cursor-pointer'
       >
         Back to list
